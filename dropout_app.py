@@ -5,7 +5,7 @@ import pickle
 
 st.title("*Student Dropout Rate Prediction App*")
 
-scaler = pickle.load(open('scal.pkl','rb'))
+#scaler = pickle.load(open('scal.pkl','rb'))
 new_scaler = pickle.load(open('scal2.pkl','rb'))
 model = pickle.load(open('model.pkl','rb'))
 
