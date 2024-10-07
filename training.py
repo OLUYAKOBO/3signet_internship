@@ -36,9 +36,10 @@ def fit_model(model,x_train,x_val,y_train,y_val):
     model.fit(x_train,y_train)
     model_score  = model.score(x_val,y_val)
     return model_score
-
+#input the model of your choice here
 model_score=fit_model(model = log_model,
           x_train=x_train,
           x_val=x_val,
           y_train=y_train,
           y_val=y_val)
+
