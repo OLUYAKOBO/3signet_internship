@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 import pickle
 
+st.set_page_config(page_title="Student Dropout Rate Prediction App", page_icon="📊", layout="wide")
 st.title("*Student Dropout Rate Prediction App*")
 
 #scaler = pickle.load(open('scal.pkl','rb'))
