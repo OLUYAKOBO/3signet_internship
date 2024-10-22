@@ -23,6 +23,7 @@ st.write(" ")
 st.markdown("### Get Started!")
 st.write('----')
 st.markdown("*To get started, fill in your necessary Student details below;*")
+st.write("")
 
 def user_info():
 
