@@ -67,6 +67,10 @@ def scaling():
 df1 = scaling()
 
 prediction = model.predict(df1)
+prediction_proba = model.predict_proba(df1)
+approved_prob = np.round((prediction_proba[:, 1] * 100), 2)[0]
+
+output = f"The probability that your credit card will be approved is {approved_prob}%"
 
 import time
 
@@ -75,5 +79,7 @@ if st.button('*Click here to get your prediction*'):
     with st.spinner('Predicting... Please wait...'):
         if prediction == 0:
             st.success("This student will not Graduate")
+            st.success(output)
         else:
             st.success("This student will Graduate")
+            st.success(output)
