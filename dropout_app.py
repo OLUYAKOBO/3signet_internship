@@ -10,8 +10,12 @@ st.title("*Student Dropout Rate Prediction App*")
 new_scaler = pickle.load(open('scal2.pkl','rb'))
 model = pickle.load(open('model.pkl','rb'))
 
-st.write("*This app predicts whether a newly admitted student **Graduates** or not*")
-st.header("Enter the student details here")
+st.write(" ")
+st.write(" ")
+st.markdown("### Get Started!")
+st.write('----')
+st.markdown("*To get started, fill in your necessary Student details below;*")
+
 def user_info():
 
     c1,c2 = st.columns(2)
