@@ -12,7 +12,7 @@ model = pickle.load(open('model.pkl','rb'))
 
 st.sidebar.markdown("""
     ### Key Features:
-    - **Real-Time Student Dropout Prediction**: Instantly predicts the likelihood of a student dropping out based on their data.
+    - **Real-Time Student Dropout Prediction**: Instantly predicts the likelihood of a student graduating or dropping out based on their data.
     - **User-Friendly Interface**: Provides an intuitive web-based interface built with Streamlit for easy data input and feedback.
     - **Machine Learning Integration**: Utilizes advanced machine learning algorithms to ensure accurate and reliable predictions.
     - **Continuous Monitoring and Updates**: Regularly monitors performance and updates the model to maintain and enhance accuracy.
@@ -32,7 +32,7 @@ def user_info():
         course = st.number_input('Enter your number of courses',33,10000,2344)
         prev_qua = st.number_input("Enter your previous qualification grade here",95,200,100)
         adm_grade = st.number_input("Enter your admission grade here",95,200,100)
-        tuition = st.number_input("Enter your tuition fees status",0,1,1)
+        tuition = st.number_input("Enter your tuition fees status,(0 represents not paid, 1 represents fully paid)",0,1,1)
         curr1_ev = st.number_input("Enter your first semester evaluation units",0,45,20)
 
     with c2:
