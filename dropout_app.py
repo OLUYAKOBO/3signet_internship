@@ -70,7 +70,7 @@ prediction = model.predict(df1)
 prediction_proba = model.predict_proba(df1)
 approved_prob = np.round((prediction_proba[:, 1] * 100), 2)[0]
 
-output = f"The probability that your credit card will be approved is {approved_prob}%"
+output = f"The probability that this student will graduate is {approved_prob}%"
 
 import time
 
