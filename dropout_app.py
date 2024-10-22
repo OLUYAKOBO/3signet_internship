@@ -10,6 +10,14 @@ st.title("*Student Dropout Rate Prediction App*")
 new_scaler = pickle.load(open('scal2.pkl','rb'))
 model = pickle.load(open('model.pkl','rb'))
 
+st.sidebar.markdown("""
+    ### Key Features:
+    - **Real-Time Student Dropout Prediction**: Instantly predicts the likelihood of a student dropping out based on their data.
+    - **User-Friendly Interface**: Provides an intuitive web-based interface built with Streamlit for easy data input and feedback.
+    - **Machine Learning Integration**: Utilizes advanced machine learning algorithms to ensure accurate and reliable predictions.
+    - **Continuous Monitoring and Updates**: Regularly monitors performance and updates the model to maintain and enhance accuracy.
+    """)
+
 st.write(" ")
 st.write(" ")
 st.markdown("### Get Started!")
