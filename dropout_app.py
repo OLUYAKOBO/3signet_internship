@@ -80,14 +80,14 @@ prediction_proba = model.predict_proba(df1)
 approved_prob = np.round((prediction_proba[:, 1] * 100), 2)[0]
 
 output = f"The probability that this student will graduate is {approved_prob}%"
-
+#output2 = f"The probability that this student will dropout is {approved_prob}%"
 import time
 st.write("")
 if st.button('*Click here to get your prediction*'):
     time.sleep(10)
     with st.spinner('Predicting... Please wait...'):
         if prediction == 0:
-            st.success("This student will not Graduate")
+            st.success("This student will Drop out")
             st.write("")
             st.success(output)
         else:
