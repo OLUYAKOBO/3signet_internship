@@ -1,6 +1,6 @@
-**3 Signet Internship**
+**3 Signet Internship Repository**
 
-*This contains the documentation of the processes involved in the project*
+*This contains the links to the streamlit applications developed*
 
 *This is the link to the deployed model: https://studentdropoutrateprediction.streamlit.app/
 
