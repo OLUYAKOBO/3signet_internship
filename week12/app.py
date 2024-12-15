@@ -6,7 +6,7 @@ from keras.models import load_model
 import pandas as pd
 
 # Load the trained model
-model = load_model('best_model.keras')
+model = load_model('./week12/best_model.keras')
 
 # Streamlit app title
 st.title("Image Classification Application")
