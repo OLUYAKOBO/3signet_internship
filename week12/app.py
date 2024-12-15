@@ -48,7 +48,7 @@ if uploaded_file is not None:
         predicted_class = class_names[predicted_index]
         
         # Display the classification result
-        st.write(f"The Image displayed is that of a/an **{predicted_class.capitalize()}**")
+        st.write(f"The Image displayed is that of A/An **{predicted_class.capitalize()}**")
         st.write("### Confidence Scores for Each Class:")
         
         # Display confidence scores in a table
